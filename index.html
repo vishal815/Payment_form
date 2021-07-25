@@ -7,57 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <form action="">
+        <form action="success.html">
 
-            <h1 class="main_heading">  <b>P</b><u>ayment Form</u></h1>
-            <p>Required filds are followed by *</p>
-            <h2>Contact Informetion</h2>
-            <P>Name: * <input type="text" name="name" placeholder="Vishal Lazrus" required> </P>
-
+            <h1 class="main_heading"><b>Payment Form</b></h1>
+            <h2>Required fields are followed by *</h2>
+            <br>
+            <h3>Contact Information</h3>
+            <br>
+            <b>Name: *</b><P> <input type="text" name="name" placeholder="enter your full name" required> </P>
+            <br>
             <fieldset>
-                <legend>Gender *</legend>
+                <b><legend>Gender *</legend></b>
 
                 <P>
                     Male <input type="radio" name="gender" id="Male" required>
                     Female <input type="radio" name="gender" id="Femele" required>
+                    Others <input type="radio" name="gender" id="Femele" required>
                 </P>
             </fieldset>
-
-            <p> Address: <textarea name="Address" id="Address" cols="85%" rows="7%"
+            <br>
+            <p><b>Address:</b> <textarea name="Address" id="Address" cols="85%" rows="7%"
                     placeholder=" Enter your Address"></textarea> </p>
-            <p>Email: *<input type="email" name="email" id="email" required placeholder="vishallazrus3210@gmail.com">
+            <br>
+            <p><b>Email: *</b><input type="email" name="email" id="email" required placeholder="enter your email address">
             </p>
-            <p> Pincode: * <input type="number" name="pin" id="pin" required placeholder="125634"></p>
-            <h2>Payment Informetion</h2>
-            <p>Card Type: *
+            <br>
+            <p><b>Pin-Code: *</b> <input type="number" name="pin" id="pin" required placeholder="125634"></p>
+            <br>
+            <h2>Payment Information</h2>
+            <p><b>Card Type: *</b>
                 <select name="card_type" id="card_type" required>
                     <option value="">--Select a Card Type--</option>
                     <option value="visa">Visa</option>
-                    <option value="Rupay">Rupay</option>
-                    <option value="MasterCard">MasterCard</oMaster ption>
+                    <option value="Rupee">Rupee</option>
+                    <option value="MasterCard">MasterCard</option>
 
                 </select>
             </p>
             <p>
-                Card Number *<input type="number" required name="Card_number" id="Card_number"
+                <b>Card Number: *</b><input type="number" required name="Card_number" id="Card_number"
                     placeholder="1111-2222-3333-4444">
             </p>
             <p>
-                Expiration Date: * <input type="date" name="exp_date" required id="exp_date">
+                <b>Expiration Date: *</b> <input type="date" name="exp_date" required id="exp_date">
             </p>
             <p>
-                CVV input * <input type="password" name="CVV" id="CVV" required placeholder="CVV Number">
+                <b>CVV input * </b><input type="password" name="CVV" id="CVV" required placeholder="CVV Number">
 
             </p>
-
-            <button class="button">Submit</button>
+            <br>
+            <center><button class="button">Submit</button></center>
 
         </form>
     </div>
 </body>
 
 </html>
+

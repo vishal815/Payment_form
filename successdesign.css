@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.container {
+    padding: 5px 20px 15px 20px ;
+    border: 3px solid rgb(2, 0, 0);
+    border-radius: 7px;
+    background-color: yellow;
+}
