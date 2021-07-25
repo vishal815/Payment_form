@@ -1,20 +1,28 @@
 *{
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 15px 30px;
     font-size: 17px;
     padding: 8px;
-
 }
 
+.container{
+    animation: change 5s infinite;
 
+}
+@keyframes change {
+    0%{background-color: rgb(226, 113, 113);}
+    25%{background-color: rgb(127, 199, 44);}
+    50%{background-color: rgb(238, 183, 30);}
+    75%{background-color: rgb(233, 135, 225);}
+    100%{background-color: rgb(231, 117, 117);}
+}
 .container {
-    background-color: #9ab2c9;
     padding: 5px 20px 15px 20px ;
-    border: 1px solid lightgray;
-    border-radius: 4px;
+    border: 3px solid rgb(2, 0, 0);
+    border-radius: 7px;
 }
 
 input [type="text"],
@@ -37,9 +45,9 @@ fieldset {
 }
 .main_heading{
     text-align: center;
-    color: #900c82;
-   
+    color:#900c82;   
 }
+
 input[type=submit]{
     border: none;
    
